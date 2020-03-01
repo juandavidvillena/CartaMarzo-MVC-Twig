@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carta digital</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+	<link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+--!>
+
+</head>
+<body>
+<div class="content">
+<div class="content-grids">
+{% for item in pla %}
+				<div class="wrap">
+				 <div class="grid">
+					<img src="images/ambiente.jpg" title="image-ambiente" />
+					<h3>{{ item.nombre }}</h3>
+					<p>{{ item.ingredientes }}</p>
+                    <p>Precio: <strong> {{ item.Precio }}</strong> €</p>
+				</div>
+				<div class="clear"> </div>
+                
+			    </div>
+                {% endfor %}
+                
+		 </div>	
+</div>
+
+<!--<div class="card" style="width: 18rem; border: 1px solid grey">
+  <img class="card-img-top" style="width: 18rem; height: 200px" src="images/intro.jpg" alt="Card image cap">
+  <div class="card-body" style="padding: 5px;">
+    <h5 class="card-title">{{ item.nombre }}</h5>
+    <p class="card-text">{{ item.ingredientes }}</p>
+    <div class="btn btn-primary">Precio : {{ item.precio}}</div>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem; border: 1px solid grey">
+  <img class="card-img-top" style="width: 18rem; height: 200px" src="images/sala.jpg" alt="Card image cap">
+  <div class="card-body" style="padding: 5px;">
+    <h5 class="card-title">{{ item.nombre }}</h5>
+    <p class="card-text">{{ item.ingredientes }}</p>
+    <div class="btn btn-primary">Precio : {{ item.precio}}</div>
+  </div>
+</div> -->

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carta digital</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+	<link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+--!>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class=" container ">
+    <a class="loguito navbar-brand" href="index.php">
+          <img src="images/logoapp.png" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.php?con=home&ope=listar">Home
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?con=plato&ope=listar">Carta</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="index.php?con=plato&ope=anadir">Nuevo Plato</a>
+        </li>
+       
+        
+        <li class="nav-item">
+          <a class="nav-link" href="index.php">Cerrar Sesion</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+{% block titulo %}{% endblock %}
+
+	<div class="container">
+
+		{% block contenido %}
+		{% endblock %}
+
+	</div>
+
+{% block footer %}
+    <div class="footer">
+			<div class="wrap">
+			<div class="footer-grids">
+				<div class="footer-grid">
+					<h3>EXTRAS</h3>
+					<p>No dudes en visitarnos, si no quieres esperar asegurate de reservar tu mesa</p>
+				</div>
+				<div class="footer-grid">
+					<h3>REDES SOCIALES</h3>
+					<ul>
+						<li><a href="https://www.instagram.com/bocallenateatinos/">Instagram</a></li>
+						<li><a href="https://www.facebook.com/Bocallenateatinos/">Facebook</a></li>
+						<li><a href="https://www.twitter.com/">Twitter</a></li>
+						<li><a href="https://www.linkedin.com/in/juan-david-villena-gil/">Linkedin</a></li>
+					</ul>
+				</div>
+				<div class="footer-grid footer-lastgrid">
+					<h3>CONTACTO</h3>
+					<p>Información útil para contactar con nosotros</p>
+					<div class="footer-grid-address">
+						<p>Tel: +34 951 57 22 34</p>
+						<p>Fax: +34 951 57 22 86 </p>
+						<p>Email:<a href="info@bocallena.es">info@bocallena.es</a></p>
+					</div>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			</div>
+		</div>
+		<div class="clear"> </div>
+		<div class="copy-right">
+			<p>© Bocallena. All Rights Reserved | Design by <a href="https://www.linkedin.com/in/juan-david-villena-gil/">Juan David Villena Gil</a></p>
+		</div>
+{% endblock %}
+
+
+</body>
+</html>

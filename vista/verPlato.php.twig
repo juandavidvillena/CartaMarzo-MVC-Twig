@@ -1,0 +1,33 @@
+{% extends "estructuratwigvista.php.twig" %}
+
+
+{% block titulo %}<h1 class=" h2 container text-center" style="margin-top:3rem;">ADMINISTRACION DE PLATOS</h1>{% endblock %}
+
+{% block contenido %}
+<div class="content table-responsive table-full-width">
+<table class="table table-hover table-striped">
+    <thead>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Alergenos</th>
+        <th>Ingredientes</th>
+        <th><i class="fa fa-wrench" aria-hidden="true"></i>Opciones</th>
+    </thead>
+    <tbody>
+    {% for item in pla %}
+        <tr>
+            <td>{{ item.idPlato }}</td>
+            <td>{{ item.nombre }}</td>
+            <td>{{ item.precio }}€</td>
+            <td>{{ item.alergeno }}</td>
+            <td>{{ item.ingredientes }}</td>
+            <td> <a href='index.php?con=plato&ope=editar&id={{ item.idPlato }}' class='btn btn-warning btn-m'><i class='fa fa-pencil' aria-hidden='true'><img src='images/pencil.svg'></i></a>
+            <a href='index.php?con=plato&ope=borrar&id={{ item.idPlato }}' class='btn btn-danger btn-m'><i class='fa fa-trash' aria-hidden='true'><img src='images/delete.svg'></i></a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+		
+

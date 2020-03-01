@@ -1,0 +1,30 @@
+{% extends "estructuratwigvista.php.twig" %}
+
+{% block titulo %}<h1 class=" h2 container text-center" style="margin-top:3rem;">Editar Plato </h1>{% endblock%}
+
+{% block contenido %}
+    <div class="form-group">
+        <form action="index.php" method="get"  class="centrar">
+            
+            <input type="hidden" name="con" value="plato" />
+            <input type="hidden" name="ope" value="editar"/>
+            <input type="hidden" name="id" value={{pla.idPlato}} />
+            
+           <label for="nombre">Nombre del plato: </label>
+			<input type="text" class="form-control"  id="nombre" name="nombre" value={{pla.nombre}} />
+			<br/>			
+			<label for="precio">Precio: </label>
+			<input type="text" class="form-control"  id="precio" name="precio" value={{pla.precio}} />
+			<br/>
+			<label for="ingredientes">ingredientes </label>
+			<input type="text" class="form-control" id="ingredientes" name="ingredientes" value={{pla.ingredientes}} />
+			<br/>
+            <label for="alergeno">Alergenos </label>
+			<input type="text" class="form-control"  id="alergeno" name="alergeno" value={% if pla.alergeno == null %}---{% else %}{{ pla.alergeno }}{% endif %} />
+			<br/>
+			<button class="btn btn-primary btn-lg btn-block mb-5" type="submit">Guardar</button>
+    </form>
+        </div>
+
+
+{% endblock %}

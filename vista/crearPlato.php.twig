@@ -1,0 +1,38 @@
+{% extends "estructuratwigvista.php.twig" %}
+
+{% block titulo %}<h1 class=" h2 container text-center" style="margin-top:3rem;">Crear Plato </h1>{% endblock%}
+
+
+{% block contenido %}
+    <div class="form-group">
+        <form action="index.php" method="get"  class="centrar form-group"">
+            
+            <input type="hidden" name="con" value="plato" />
+            <input type="hidden" name="ope" value="anadir"/>
+            
+           <label for="nombre">Nombre del plato: </label>
+			<input type="text" class="form-control" id="nombre" name="nombre" placeholder='Plato' />
+			<br/>			
+			<label for="precio">Precio: </label>
+			<input type="number" class="form-control" id="precio" name="precio" placeholder='0' />
+			<br/>
+			<label for="ingredientes">ingredientes </label>
+			<input type="text" class="form-control" id="ingredientes" name="ingredientes" placeholder='Ingredientes' />
+			<br/>
+            <label for="alergeno">Alergenos </label>
+			<input type="text" class="form-control" id="alergeno" name="alergeno" placeholder='Alergenos' />
+
+            <label for="tipoplato">Categoria del plato</label>
+            <select class="form-control" name='tipoplato' id="tipoplato">
+            {% for item in tip %}
+                <option value={{ item.idTipo }}>{{ item.nom_tipo }}</option>
+            {% endfor %}
+            </select>
+  </div>
+			<br/>
+			<button class="btn btn-primary btn-lg btn-block mb-5" type="submit">Guardar</button>
+    </form>
+        </div>
+
+
+{% endblock %}
