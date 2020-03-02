@@ -16,7 +16,11 @@
 {% for item in pla %}
 				<div class="wrap">
 				 <div class="grid">
-					<img src="images/ambiente.jpg" title="image-ambiente" />
+					{% if item.foto != NULL %}
+					<img src="images/{{ item.foto }}" title="plato-para-(a)-probar" />
+					{% else %}
+					<img src="images/logoapp.png" title="plato-para-(a)-probar" />
+					{% endif %}
 					<h3>{{ item.nombre }}</h3>
 					<p>{{ item.ingredientes }}</p>
                     <p>Precio: <strong> {{ item.Precio }}</strong> €</p>
