@@ -7,4 +7,4 @@ Este es un proyecto ya conocido por mi profesorado ya que lo hice en su momento 
 <h2>Funcionamiento</h2>
 Esta web tiene dos diferentes perfiles por ahora, tenemos el administrador, que es capaz de poder administrar el sistema de forma sencilla accediendo a todos los platos y especialidades de nuestra carta y asi poderlos editar y poner si estan actualmente disponibles o no. El otro usuario es el comensal que podrá ver cual son los platos que puede pedir y mirar si son de su gusto o ùeden consumirlos gracias a su apartado para los alergenos (en desarrollo), tambien tiene la opción de poder reservar una mesa de una manera muy comoda, con solo rellenar un correo electronico. Para hacer esta función he usado xMailer que nos permite tener un patron para el diseño del correo que se autogenera. 
 <br/>
-<h5>Espero que os haya gustado esta breve introducción, os invito a descargaros el código y que lo modifiqueis a vuestro antojo, muchas gracias</h5>
+<h4>Espero que os haya gustado esta breve introducción, os invito a descargaros el código y que lo modifiqueis a vuestro antojo, muchas gracias</h4>
